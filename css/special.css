@@ -1,0 +1,352 @@
+.special {
+    background: #f8f8f8;
+    padding: 150px 0 344px;
+}
+
+.special__title {
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 46px;
+    line-height: 1.1;
+    color: var(--base-color);
+    margin-bottom: 50px;
+}
+
+.special__title span {
+    color: var(--pink);
+}
+
+.special__categories {}
+
+.special__row-one {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.special__link {
+    font-weight: 400;
+    font-size: 17px;
+    color: var(--base-color);
+    padding: 6px 20px 7px;
+    border: 1px solid var(--base-color);
+    border-radius: 31px;
+    max-width: 339px;
+    display: block;
+    transition: all 0.4s;
+}
+
+.special__link:hover {
+    color: var(--pink);
+    border: 1px solid var(--pink);
+}
+
+.special__row-two {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s;
+    margin-bottom: 40px;
+}
+
+.special__more {
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--pink);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    margin-left: auto;
+    background: none;
+    border: none;
+}
+
+.special__categories.special__all .special__row-two {
+    opacity: 1;
+    visibility: visible;
+}
+
+.variants__block {
+    position: relative;
+}
+
+.special__way {
+    max-width: 273px;
+    width: 100%;
+    height: 40px;
+    gap: 25px;
+    border: 1px solid var(--pink);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+
+    right: 0;
+    top: -80px;
+}
+
+.variants {
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    max-height: 0;
+    transition: all 0.4s;
+    position: absolute;
+    right: 0;
+    top: -30px;
+    transition: all 0.4s;
+    /* color: yellow; */
+}
+
+.special__way-open {
+    margin-bottom: 10px;
+}
+
+.way-text {
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--base-color);
+}
+
+.search.search__all .variants {
+    opacity: 1;
+    visibility: visible;
+    max-height: 100%;
+}
+
+.variants__link {
+    display: flex;
+    gap: 23px;
+    max-width: 273px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-bottom: 2px;
+    background: #fdfdfd;
+    border-radius: 3px 3px 0 0;
+    border: 1px solid #11111123;
+}
+
+.variants__list:last-child {
+    margin-bottom: 10px;
+    margin-left: auto;
+    /* max-width: 400px; */
+}
+
+.special__inner {}
+
+.special__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.special__item-list {
+    box-shadow: 0 4px 41px 0 rgba(0, 0, 0, 0.05);
+    background: #fff;
+    align-self: flex-end;
+}
+
+.special__img img {
+    max-width: 100%;
+}
+
+.special__img {
+    margin-bottom: 40px;
+}
+
+.special__text {
+    margin: 40px 40px 25px;
+    font-weight: 300;
+    font-size: 24px;
+    color: var(--base-color);
+}
+
+.special__availability {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 40px 10px;
+}
+
+.cirkle {
+    white-space: nowrap;
+}
+
+.discount {
+    font-weight: 400;
+    font-size: 24px;
+    padding: 7.5px 28.5px;
+    color: #f8f8f8;
+    background: var(--pink);
+}
+
+.special__price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 40px 40px;
+}
+
+.price {
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 42px;
+    color: var(--base-color);
+}
+
+.dont-price {
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 24px;
+    text-decoration: line-through;
+    color: #ababab;
+}
+
+.price-price {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr)
+}
+
+.special__quantity {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    border: 1px solid #111;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+.img-minus {}
+
+.more-more {
+    align-self: center;
+}
+
+.img-plus {
+    align-self: center;
+}
+
+.special__basket {
+    border: 1px solid #111;
+    border-radius: 3px;
+    padding: 15.5px 20px;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    color: #f8f8f8;
+    background: var(--base-color);
+    transition: all 0.4s;
+}
+
+.special__basket:hover {
+    background: var(--pink);
+    border: 1px solid var(--pink);
+}
+
+.basket-text {}
+
+
+
+
+
+
+
+
+
+
+/* скрываем панель по умолчанию */
+.variants {
+    display: none;
+    position: absolute;
+    /* если нужно, подстрой под layout */
+    background: #fff;
+    border: 1px solid #eee;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+    padding: 8px;
+    z-index: 30;
+    min-width: 220px;
+}
+
+/* открытое состояние */
+.variants.variants--open {
+    display: flex;
+    background: #f8f8f8;
+    box-shadow: none;
+}
+
+/* стиль для галочки, если она есть */
+.variants__tick {
+    width: 18px;
+    height: auto;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
+/* fallback галочка */
+.variants__check-fallback {
+    margin-left: 8px;
+    color: var(--pink, #C5358C);
+    font-weight: 600;
+}
+
+/* немного интерактивности для ссылок */
+.variants__link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    text-decoration: none;
+    color: inherit;
+    padding: 6px 8px;
+    border-radius: 4px;
+}
+
+.variants__link:hover {
+    background: #fafafa;
+}
+
+
+
+
+
+
+
+.special__swiper {}
+
+.special__wrapper {}
+
+.special__slide {}
+
+.special__controls {
+    margin: 130px 0 450px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.special__prev,
+.special__next {
+    cursor: pointer;
+    border: 1px solid #111;
+    border-radius: 3px;
+    padding: 10px 0px;
+    width: 64px;
+    height: 64px;
+    background: transparent;
+    flex-shrink: 0;
+    transition: all 0.4s;
+}
+.special__prev:hover path {
+    fill: var(--pink);
+}
+.special__next:hover path {
+    fill: var(--pink);
+}
+
+.special__pagination {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 24px;
+    color: #111;
+}
